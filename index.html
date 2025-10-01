@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="bienvenida()">
+  <header><h1>Alejandro Rpodríguez - Desarrollador Web</h1></header>
+  <nav><a href="#contacto">Contacto</a> | <a href="#" onclick="toggleHabilidades()">Habilidades
+</a></nav>
+  <main>
+    <section>
+      <h2>Experiencia</h2>
+      <article>
+        <h3>UNIR</h3>
+        <p>Desarrollo de aplicaciones en red.</p>
+      </article>
+    </section>
+    <section id="habilidades" style="display:none;">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+    <section id="contacto">
+      <h2>Formulario de contacto</h2>
+      <form onsubmit="return validarFormulario()">
+        <label>Nombre: <input type="text" id="nombre" required></label><br>
+        <label>Email: <input type="email" id="email" required></label><br>
+        <label>Mensaje: <textarea></textarea></label><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer><p>© 2025 Alejandro Rodríguez</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+header, nav, footer {
+  text-align: center;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+}
+
+main section {
+  background: white;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
